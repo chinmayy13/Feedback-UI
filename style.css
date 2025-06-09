@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dec7eb;
+  font-family: "Lato ", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.panel-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(180, 64, 222, 0.3);
+  border-radius: 4px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  max-width: 25rem;
+}
+
+.panel-container:hover {
+  transform: scale(1.01);
+}
+
+.panel-container strong {
+  line-height: 1.2rem;
+}
+
+strong {
+  color: #620e92;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.01);
+}
+
+.rating img {
+  width: 3.2rem;
+}
+
+.rating small {
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.unhappy {
+  color: #d9534f;
+}
+
+.okay {
+  color: #5cb85c;
+}
+
+.neutral {
+  color: #f0ad4e;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:hover {
+  transform: scale(1.01);
+}
+
+.fa-heart {
+  color: red;
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
